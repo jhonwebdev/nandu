@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Verma - Academic Achiever</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+            background: url('WhatsApp Image 2025-01-02 at 11.04.33 PM.jpeg') no-repeat center center;
+            background-attachment: fixed;
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.8);
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 5px 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #f44336;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        .hero-content {
+            display: none; /* Initially hidden */
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 16px;
+            max-width: 90%;
+            margin: 20px auto;
+            line-height: 1.6;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero .btn {
+            position: absolute;
+            bottom: 60px; /* Positioned slightly above the bottom */
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 12px 25px;
+            background: #f44336;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(244, 67, 54, 0.4);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .hero .btn:hover {
+            background: #d32f2f;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background: rgba(0, 0, 0, 0.9);
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 14px;
+            }
+
+            .hero .btn {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+
+            nav a {
+                font-size: 12px;
+                margin: 3px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="#">Home</a>
+            <a href="#about">About Me</a>
+            <a href="lol chat.html">Portfolio</a> <!-- Link to the second webpage -->
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>I AM ANSH VERMA</h1>
+            <p>
+                I am Ansh Verma, a passionate learner who scored 90% in 10th and 93% in 12th. 
+                My dedication and hard work have been recognized, as I have been selected in five prestigious Indian Institutes of Management (IIMs). 
+                My journey reflects my commitment to excellence and my unwavering focus on achieving my dreams. 
+                I aim to continue this pursuit and inspire others to follow their own paths to success.
+            </p>
+        </div>
+        <button class="btn" onclick="showContent()">Read About Him</button>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Ansh Verma. All rights reserved.
+    </div>
+
+    <script>
+        function showContent() {
+            const content = document.querySelector('.hero-content');
+            content.style.display = 'block'; // Show the content
+        }
+    </script>
+</body>
+</html>
